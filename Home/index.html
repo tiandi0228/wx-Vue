@@ -13,7 +13,7 @@
 <body>
     <div id="app">
     	<ul>
-    		<li v-for="list in lists">
+    		<li v-for="list in lists" transition="staggered" stagger="100">
     			<a href="/list/index.html?cid={{list.cid}}">{{list.title}}</a>
     		</li>
     	</ul>
