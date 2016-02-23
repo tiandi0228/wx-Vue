@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>政法微信排行榜</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+    <link href="/assets/css/uikit.min.css" rel='stylesheet' type='text/css'>
+    <link href="home.css" rel='stylesheet' type='text/css'>
+    <script src="http://apps.bdimg.com/libs/vue/1.0.14/vue.js"></script>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.js"></script>
+</head>
+
+<body>
+    <div id="app">
+    	<ul>
+    		<li v-for="list in lists">
+    			<a href="/list/index.html?cid={{list.cid}}">{{list.title}}</a>
+    		</li>
+    	</ul>
+    </div>
+    <script src="home.js"></script>
+</body>
+</html>
