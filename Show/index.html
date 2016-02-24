@@ -7,16 +7,14 @@
     <link href="/assets/css/uikit.min.css" rel='stylesheet' type='text/css'>
     <link href="show.css" rel='stylesheet' type='text/css'>
     <script src="http://apps.bdimg.com/libs/vue/1.0.14/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-router/0.7.10/vue-router.min.js"></script>
     <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.js"></script>
 </head>
 
 <body>
     <div id="app">
-    	<ul>
-    		<li v-for="list in lists">
-    			<a href="/list/{{list.cid}}">{{list.title}}</a>
-    		</li>
-    	</ul>
+    	<article v-html="text"></article>
+        <img :src="email">
     </div>
     <script src="show.js"></script>
 </body>

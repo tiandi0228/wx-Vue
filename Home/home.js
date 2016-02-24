@@ -17,6 +17,5 @@ new Vue({
 			}
 			xhr.send()
 		}
-	},
-	
+	}
 })
