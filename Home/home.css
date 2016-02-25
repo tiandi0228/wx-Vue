@@ -3,5 +3,7 @@ html{font-size: 62.5%;}
 body{max-width: 820px;margin: 0 auto;}
 ul,li{list-style: none;}
 ul{padding: 2rem 0;}
-li{padding: 1rem 0;margin: .8rem 5rem;font-size: 1.8rem;text-align: center;margin-bottom: -1px;border-radius: 1rem;background: -webkit-linear-gradient(#EDEDED, #fff);box-shadow: 0 .1rem .1rem #ccc;}
+li{padding: 1rem 0;margin: .8rem 2rem;font-size: 1.6rem;text-align: center;margin-bottom: -1px;border-radius: 1rem;background: -webkit-linear-gradient(#EDEDED, #fff);box-shadow: 0 .1rem .1rem #ccc;}
 .staggered-transition{transition: all .5s ease;}
+a{color:#333;}
+a:hover{color:#333;}
