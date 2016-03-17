@@ -12,12 +12,14 @@
 
 <body>
     <div id="app">
-        <header>
-            <a @click="doBack()"></a>
-            <h2 v-text="title"></h2>
-        </header>
-    	<article v-html="text"></article>
-        <div class="ewm"><img :src="email"></div>
+      <header>
+        <a @click="doBack()"></a>
+        <h2 v-text="name"></h2>
+      </header>
+      <article v-html="descrb"></article>
+      <div class="ewm">
+        <img src="http://115.236.32.178/wxhy/{{ewmurl}}">
+      </div>
     </div>
     <script src="show.js"></script>
 </body>

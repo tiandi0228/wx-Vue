@@ -12,17 +12,20 @@
 
 <body>
     <div id="app">
-        <header>
-            <a @click="doBack()"></a>
-            <h2 v-text="title"></h2>
-        </header>
+      <header>
+          <a @click="doBack()"></a>
+          <h2 v-text="title"></h2>
+      </header>
+      <input v-model="search" placeholder="请输入微信号搜索">
     	<ul>
-    		<li v-for="list in lists">
-                <a href="/show/index.html?cid={{list.cid}}">
-                    <img :src="email">
-        			<h2 v-text="list.title"></h2>
-                    <p v-html="list.text"></p>
-                </a>
+    		<li v-for="list in lists | filterBy search" transition="staggered" stagger="100">
+          <a href="http://115.236.32.178/huangye/Show/index.html?id={{list.id}}">
+            <img src="http://115.236.32.178/wxhy/{{list.logourl}}">
+            <div style="float:left;width:65%;padding-left:1rem;">
+              <h2 v-text="list.name"></h2>
+              <p v-text="list.descrb"></p>
+            </div>
+          </a>
     		</li>
     	</ul>
     </div>

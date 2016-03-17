@@ -1,4 +1,4 @@
-var apiURL= 'http://syuchun.com/blog/list.php?page=1'
+var apiURL= 'http://115.236.32.178/wxhy/ClassList.php'
 new Vue({
 	el: '#app',
 	data:{
